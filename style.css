@@ -48,10 +48,7 @@ min-height:100%;
 /************************** CONTENT ************************/
 .content .title{
 	text-align:center;
-	width:40%;
-	margin:0 auto;
 	font-size:4em;
-	padding-top:30;
 }
 .content, .immersion{
 margin:0px 5% 0 5%;
@@ -64,7 +61,7 @@ margin-top:3%;
 	padding:10px 10px 10px 70px;
 	left:-70px;
 }
-.content p, .immersion p{
+.immersion p{
 display:table-cell;
 	text-align: justify;
 	padding:10px 20px 25px 10px;
@@ -105,6 +102,25 @@ display:table-cell;
 }
 .content p a:active{
 	color:#4868BD;
+}
+.content h3  {
+font-size:1.2em;
+text-decoration: underline;
+margin-bottom:0;}
+
+.content .lesson{
+	display:table-cell;
+	width:45%;
+}
+.content .lesson .learn{
+padding-left:10%;
+font-size:1.2em;
+font-weight: bold;
+margin-bottom:0;padding-bottom:0;
+
+}
+.content .lesson li{
+	list-style: none;
 }
 .immersion strong{
 	font-size:1.5em;
