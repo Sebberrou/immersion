@@ -1,0 +1,190 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	position:relative;
+	padding:0 0 50px 0;margin:0;
+	min-height:100%;
+	font-size:18px;
+font-family:'Noto sans', sans-serif;
+}
+/****************************** NAV **********************/
+.nav{
+	top:0;
+	width:100%;
+	text-align:center;
+	background-color:#121B32;
+	color:white;
+	height:60px;
+
+}
+.nav ul{
+	margin:0;padding:0;
+min-height:100%;
+}
+.nav li{
+	text-decoration:none;
+	display:inline-block;
+}
+.nav button{
+	background-color:transparent;
+	border:none;
+	color:white;
+	padding:20px 100px;
+	text-decoration: none;
+	cursor:pointer;
+	font-size:0.8em;
+}
+
+.nav li button:hover{
+	box-shadow: 0px 0px 15px black inset, 
+                 0 10px 0 rgba( 255, 255, 255, 0.4);
+                 
+}
+.activ{
+	box-shadow: 0px 0px 15px black inset, 
+                 0 10px 0 rgba( 255, 255, 255, 0.4);
+}
+/************************** CONTENT ************************/
+.content .title{
+	text-align:center;
+	width:40%;
+	margin:0 auto;
+	font-size:4em;
+	padding-top:30;
+}
+.content, .immersion{
+margin:0px 5% 0 5%;
+}
+.content h2, .immersion h2{
+position:relative;
+margin-top:3%;
+	width:30%;	
+	background-color:#4868BD;
+	padding:10px 10px 10px 70px;
+	left:-70px;
+}
+.content p, .immersion p{
+display:table-cell;
+	text-align: justify;
+	padding:10px 20px 25px 10px;
+	width:33%;
+}
+.immersion{
+	display:none;
+}
+.content span{
+	position:relative;
+	display:inline-block;
+	text-align:center;
+}
+.content p span a{
+	text-decoration:none;
+	color:#333;
+	font-weight:bold;
+	font-size:1.2em;
+	-moz-transition:all 1s;
+	-webkit-transition:all 1s;
+}
+.content p span a:after{
+	content:'';
+	display:block;
+	height:2px;
+	margin:auto;
+	background-color:#333;
+	width:0px;
+	-moz-transition:all 1s;
+	-webkit-transition:all 1s;
+}
+.content p a:hover:after{
+	background-color:#4868BD;
+	width:100%;
+}
+.content p a:hover{
+	color:#4868BD;
+}
+.content p a:active{
+	color:#4868BD;
+}
+.immersion strong{
+	font-size:1.5em;
+	color:;
+}
+/************************** FOOTER **************************/
+.footer{
+	right:0px;
+	left:0px;
+	position:fixed;
+	bottom:0;
+	text-align:center;
+	background-color:#354A85;
+	height: 50px;
+
+}
+/************************** ANIMATION A RAJOUTER **************************/
+
+.immersion{
+	-moz-perspective:1000px;
+	-webkit-perspective:1000px;
+}.immersion p{
+	-moz-transition:all 2s;
+	-webkit-transition:all 2s;
+}
+.majuscule{
+	text-transform: uppercase;
+}
+.rouge{
+	background-color:#c0392b;
+}
+.violet{
+	background-color:#8e44ad;
+}
+.argent {
+	background-color:#bdc3c7;
+}
+
+.envol:hover{
+	-webkit-transform:translateZ(50px);
+	box-shadow:-10px 16px 15px rgba(0,0,0,0.5);
+}
+.cadre{
+border:solid 4px black;
+}
+.rotation:hover{
+transform:rotate(360deg);
+-webkit-transform:rotate(360deg);
+}
+
+p[class*=folie]{
+	 position:absolute;
+    left:40%;
+    top:0%;
+	-webkit-animation:folie 10s infinite linear;
+	-moz-animation:folie 10s infinite linear;
+}
+.folie2{
+	-moz-animation-delay:-3s;
+	-webkit-animation-delay:-3s;
+}
+.folie3{
+	-moz-animation-delay:-2s;
+	-webkit-animation-delay:-2s;
+}
+@keyframes folie {
+  0%  {transform: translateX(-250px) translateZ(0px) translateY(0px) } 
+    16.6666667% { transform: translateX(-50px) translateZ(-100px) translateY(-30px); z-index:8400 } 
+    33.3333334% {transform: translateX(150px)  translateZ(-100px) translateY(-30px); z-index:8400 } 
+    50.0000001% { transform:  translateX(250px)  translateZ(0px) translateY(0px) }
+    66.6666668%{transform:  translateX(150px) translateZ(100px) translateY(30px) }
+    83.3333335%{transform:  translateX(-50px) translateZ(100px) translateY(30px) }
+    100%{transform: translateX(-250px) translateZ(0px) translateY(0px) }
+}
+@-webkit-keyframes folie {
+	  0%  {transform: translateX(-250px) translateZ(0px) translateY(0px) } 
+    16.6666667% { transform: translateX(-50px) translateZ(-100px) translateY(-30px); z-index:8400 } 
+    33.3333334% {transform: translateX(150px)  translateZ(-100px) translateY(-30px); z-index:8400 } 
+    50.0000001% { transform:  translateX(250px)  translateZ(0px) translateY(0px) }
+    66.6666668%{transform:  translateX(150px) translateZ(100px) translateY(30px) }
+    83.3333335%{transform:  translateX(-50px) translateZ(100px) translateY(30px) }
+    100%{transform: translateX(-250px) translateZ(0px) translateY(0px) }
+}
