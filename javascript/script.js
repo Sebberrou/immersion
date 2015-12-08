@@ -37,7 +37,7 @@ function wCours () {
 function wMore(){
 	$content.css("display","block");
 	$immersion.css({'display':'none'});
-	$content.html("<h2>Tu en veux plus ?</h2><p> On vous conseille cet article du  <span><a href='http://www.lemonde.fr/moocs-docs/article/2015/10/16/sept-sites-et-applications-pour-decouvrir-la-programmation-informatique_4791324_4468700.html?xtmc=codingame&xtcr=1'>monde.fr</a></span><br /> Particulièrement <span><a href='http://codecademy.com'>codecademy.com</a></span> pour apprendre les languages et <span><a href='http://codingame.com'>codingame.com</a></span> pour tester ses capacités");
+	$content.html("<h2>Tu en veux plus ?</h2><p> On vous conseille cet article du  <span><a target='_blank' href='http://www.lemonde.fr/moocs-docs/article/2015/10/16/sept-sites-et-applications-pour-decouvrir-la-programmation-informatique_4791324_4468700.html?xtmc=codingame&xtcr=1'>monde.fr</a></span><br /> Particulièrement <span><a target='_blank' href='http://codecademy.com'>codecademy.com</a></span> pour apprendre les languages et <span><a target='_blank' href='http://codingame.com'>codingame.com</a></span> pour tester ses capacités");
 	document.cookie="page=More";
 	$activ=$more;
 }
