@@ -15,28 +15,28 @@ font-family:'Noto sans', sans-serif;
 	text-align:center;
 	background-color:#121B32;
 	color:white;
-	height:60px;
-
+	height:61px;
 }
 .nav ul{
 	margin:0;padding:0;
-min-height:100%;
 }
 .nav li{
 	text-decoration:none;
 	display:inline-block;
+	height:100%;
 }
-.nav button{
+.nav a{
 	background-color:transparent;
 	border:none;
 	color:white;
+	text-decoration:none;
 	padding:20px 100px;
-	text-decoration: none;
 	cursor:pointer;
 	font-size:0.8em;
+	line-height:60px;
+	vertical-align: middle;
 }
-
-.nav li button:hover{
+.nav li a:hover{
 	box-shadow: 0px 0px 15px black inset, 
                  0 10px 0 rgba( 255, 255, 255, 0.4);
                  
@@ -47,6 +47,11 @@ min-height:100%;
 }
 /************************** CONTENT ************************/
 .content .title{
+	text-align:center;
+	font-size:4em;
+}
+.content .index_title{
+	width:75%;
 	text-align:center;
 	font-size:4em;
 }
@@ -66,9 +71,6 @@ display:table-cell;
 	text-align: justify;
 	padding:10px 20px 25px 10px;
 	width:33%;
-}
-.immersion{
-	display:none;
 }
 .content span{
 	position:relative;
@@ -124,7 +126,7 @@ margin-bottom:0;padding-bottom:0;
 }
 .immersion strong{
 	font-size:1.5em;
-	color:;
+	color:#292929;
 }
 /************************** FOOTER **************************/
 .footer{
@@ -204,3 +206,28 @@ p[class*=folie]{
     83.3333335%{transform:  translateX(-50px) translateZ(100px) translateY(30px) }
     100%{transform: translateX(-250px) translateZ(0px) translateY(0px) }
 }
+
+#logo{
+	width:25%;
+position:absolute;
+top:70px;
+right:30px;
+
+}
+#logo svg{
+  position:relative;
+}
+
+   #logo g.line path{
+      animation        : draw 3s ease-in forwards;
+    }
+    @keyframes draw {
+      80% {
+        stroke-dashoffset: 0;
+        fill-opacity:0;
+      }
+      100%{
+      	stroke-dashoffset: 0;
+      	fill-opacity:1;
+      }
+    }
